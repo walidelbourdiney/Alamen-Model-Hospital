@@ -31,7 +31,7 @@ export default function MadeByUnicode() {
           rel="noopener noreferrer"
           style={styles.brand}
         >
-          Unicode Company
+          Unicode Agency
         </a>
       </p>
     </div>

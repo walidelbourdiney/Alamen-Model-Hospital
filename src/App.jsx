@@ -10,6 +10,7 @@ import BeautyCenter from "./components/sections/BeautyCenter";
 import Gallery from "./components/sections/Gallery";
 import Contact from "./components/sections/Contact";
 import Footer from "./components/sections/Footer";
+import MadeByUnicode from "./components/sections/MadeByUnicode";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
       <Contact />
 
       <Footer />
+      <MadeByUnicode />
     </>
   );
 }

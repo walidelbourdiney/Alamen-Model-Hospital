@@ -1,0 +1,84 @@
+.capabilities {
+  background: #f8fafc;
+}
+.capabilities-header {
+  text-align: center;
+
+  max-width: 800px;
+
+  margin-inline: auto;
+
+  margin-bottom: 5rem;
+}
+.specialties-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  gap: 1.5rem;
+}
+.specialty-card {
+  position: relative;
+
+  background: white;
+
+  border-radius: 20px;
+
+  padding: 2rem;
+
+  min-height: 140px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  border: 1px solid rgba(31, 60, 136, 0.08);
+
+  transition: var(--transition);
+
+  overflow: hidden;
+}
+.specialty-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+.specialty-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 100%;
+
+  height: 4px;
+
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+.specialty-number {
+  font-size: 3rem;
+
+  font-weight: 900;
+
+  color: rgba(31, 60, 136, 0.08);
+
+  line-height: 1;
+}
+.specialty-card h3 {
+  font-size: 1.15rem;
+
+  font-weight: 700;
+
+  color: var(--primary);
+
+  line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .specialties-grid {
+    grid-template-columns: 1fr;
+  }
+}

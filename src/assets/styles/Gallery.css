@@ -1,0 +1,74 @@
+.hospital-events {
+  background: #f8fafc;
+}
+.events-header {
+  text-align: center;
+
+  max-width: 800px;
+
+  margin-inline: auto;
+
+  margin-bottom: 5rem;
+}
+.events-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+
+  gap: 2rem;
+}
+.event-card {
+  background: white;
+
+  border-radius: 28px;
+
+  overflow: hidden;
+
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+  transition: var(--transition);
+}
+.event-card:hover {
+  transform: translateY(-10px);
+}
+.event-image {
+  overflow: hidden;
+}
+.event-image img {
+  width: 100%;
+
+  height: 260px;
+
+  object-fit: cover;
+
+  transition: 0.5s ease;
+}
+.event-card:hover img {
+  transform: scale(1.05);
+}
+.event-content {
+  padding: 2rem;
+}
+.event-content h3 {
+  color: var(--primary);
+
+  margin-bottom: 1rem;
+
+  font-size: 1.3rem;
+
+  font-weight: 800;
+}
+.event-content p {
+  color: var(--text-light);
+
+  line-height: 1.9;
+}
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-image img {
+    height: 220px;
+  }
+}
